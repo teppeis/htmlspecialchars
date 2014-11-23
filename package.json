@@ -27,9 +27,12 @@
   },
   "homepage": "https://github.com/teppeis/htmlspecialchars",
   "devDependencies": {
+    "browserify": "^6.3.2",
     "espower-loader": "^0.10.0",
+    "espowerify": "^0.10.0",
     "intelli-espower-loader": "^0.5.0",
     "karma": "^0.12.25",
+    "karma-browserifast": "^0.7.0",
     "karma-mocha": "^0.1.9",
     "karma-phantomjs-launcher": "^0.1.4",
     "mocha": "^2.0.1",

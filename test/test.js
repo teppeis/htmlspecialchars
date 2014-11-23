@@ -1,5 +1,7 @@
 'use strict';
 
+var assert = require('power-assert');
+
 describe('htmlspecialchars', function() {
     it('escapes "&" to "&amp;"', function() {
         assert(htmlspecialchars('&') === '&amp;');
