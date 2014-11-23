@@ -11,7 +11,7 @@
     }
 })(this, function() {
     return function(str) {
-        if (!str) return '';
+        if (str == null) return '';
 
         return String(str).
             replace(/&/g, '&amp;').

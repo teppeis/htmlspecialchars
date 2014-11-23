@@ -25,6 +25,9 @@ describe('htmlspecialchars', function() {
     it('returns an empty string for undefined', function() {
         assert(htmlspecialchars(null) === '');
     });
+    it('returns "false" for false', function() {
+        assert(htmlspecialchars(false) === 'false');
+    });
     it('stringify non-string value', function() {
         assert(htmlspecialchars(1) === '1');
     });
