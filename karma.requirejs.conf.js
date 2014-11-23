@@ -1,4 +1,5 @@
 // Karma configuration
+
 module.exports = function(config) {
   config.set({
 
@@ -7,11 +8,14 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'browserify'],
+    frameworks: ['mocha', 'requirejs'],
 
     // list of files / patterns to load in the browser
     files: [
-      'index.js'
+      'test/require-main.js',
+      {pattern: 'bower_components/**/*.js', included: false},
+      {pattern: 'index.js', included: false},
+      {pattern: 'test/**/*.powered.js', included: false}
     ],
 
     // list of files to exclude
@@ -21,16 +25,6 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      "/**/*.browserify": "browserify"
-    },
-
-    browserify: {
-      files: [
-        "test/test.js"
-      ],
-      transform: [
-        "espowerify"
-      ]
     },
 
     // test results reporter to use

@@ -4,10 +4,12 @@
   "description": "Escape special characters to HTML entities in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:mocha && npm run test:karma:ci",
-    "test:mocha": "mocha --require intelli-espower-loader --require './test/node-adaptor' test/test.js",
-    "test:karma": "./node_modules/karma/bin/karma start",
-    "test:karma:ci": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+    "test": "npm run mocha && npm run karma:ci && npm run karma:requirejs",
+    "mocha": "mocha --require intelli-espower-loader --require './test/node-adaptor' test/test.js",
+    "karma:watch": "./node_modules/karma/bin/karma start",
+    "karma:ci": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+    "karma:requirejs": "npm run espower && ./node_modules/karma/bin/karma start karma.requirejs.conf.js --single-run --browsers PhantomJS",
+    "espower": "espower test/test.js > test/test.powered.js"
   },
   "directories": {
     "test": "test/"
@@ -28,6 +30,7 @@
   "homepage": "https://github.com/teppeis/htmlspecialchars",
   "devDependencies": {
     "browserify": "^6.3.2",
+    "espower-cli": "^0.2.0",
     "espower-loader": "^0.10.0",
     "espowerify": "^0.10.0",
     "intelli-espower-loader": "^0.5.0",
@@ -38,8 +41,10 @@
     "karma-ie-launcher": "^0.1.5",
     "karma-mocha": "^0.1.9",
     "karma-phantomjs-launcher": "^0.1.4",
+    "karma-requirejs": "^0.2.2",
     "karma-safari-launcher": "^0.1.1",
     "mocha": "^2.0.1",
-    "power-assert": "^0.10.0"
+    "power-assert": "^0.10.0",
+    "requirejs": "^2.1.15"
   }
 }
