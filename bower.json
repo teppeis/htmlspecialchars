@@ -1,0 +1,31 @@
+{
+  "name": "htmlspecialchars",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "teppeis <teppeis@gmail.com>"
+  ],
+  "description": "Escape special characters to HTML entities in JavaScript",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "html",
+    "escape"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/teppeis/htmlspecialchars",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "karma.conf.js",
+    "package.json"
+  ],
+  "devDependencies": {
+    "node-assert": "*"
+  }
+}
