@@ -4,7 +4,10 @@
   "description": "Escape special characters to HTML entities in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require intelli-espower-loader --require './test/node-adaptor' test/test.js"
+    "test": "npm run test:mocha && npm run test:karma:ci",
+    "test:mocha": "mocha --require intelli-espower-loader --require './test/node-adaptor' test/test.js",
+    "test:karma": "./node_modules/karma/bin/karma start",
+    "test:karma:ci": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
   },
   "directories": {
     "test": "test/"
