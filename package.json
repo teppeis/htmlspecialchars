@@ -1,6 +1,6 @@
 {
   "name": "htmlspecialchars",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Escape special characters to HTML entities in JavaScript",
   "main": "index.js",
   "scripts": {

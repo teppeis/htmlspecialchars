@@ -1,7 +1,7 @@
 {
   "name": "htmlspecialchars",
   "main": "index.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "authors": [
     "teppeis <teppeis@gmail.com>"
   ],
