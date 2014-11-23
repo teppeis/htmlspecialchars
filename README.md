@@ -3,7 +3,9 @@ htmlspecialchars [![NPM version][npm-image]][npm-url] [![bower version][bower-im
 
 > Escape special characters to HTML entities in JavaScript
 
-Available in browsers, AMD(RequireJS) and CommonJS(Node.js).
+* Simple
+* No dependencies
+* Available in browsers, AMD (RequireJS) and CommonJS (Node.js).
 
 ## Usage
 
