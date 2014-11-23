@@ -26,6 +26,5 @@
     "package.json"
   ],
   "devDependencies": {
-    "node-assert": "*"
   }
 }
