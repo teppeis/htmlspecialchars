@@ -7,11 +7,13 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'browserify'],
+    frameworks: ['mocha'],
 
     // list of files / patterns to load in the browser
     files: [
-      'index.js'
+      'bower_components/power-assert/build/power-assert.js',
+      'index.js',
+      'test/**/*.powered.js'
     ],
 
     // list of files to exclude
@@ -21,16 +23,6 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      "/**/*.browserify": "browserify"
-    },
-
-    browserify: {
-      files: [
-        "test/test.js"
-      ],
-      transform: [
-        "espowerify"
-      ]
     },
 
     // test results reporter to use

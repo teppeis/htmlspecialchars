@@ -6,10 +6,9 @@
         define(['../index', 'power-assert'], factory);
     } else if (typeof exports === 'object') {
         // Node.js or Browserify
-        var assert = require('power-assert');
-        factory(htmlspecialchars, assert);
+        factory(require('../'), require('power-assert'));
     } else {
-        throw new Error('Unsupported environment!');
+        factory(htmlspecialchars, assert);
     }
 })(this, function (htmlspecialchars, assert) {
     describe('htmlspecialchars', function() {
