@@ -20,17 +20,30 @@ See [test.js](https://github.com/teppeis/htmlspecialchars/blob/master/test/test.
 
 ### for Node.js
 
-Just `npm install htmlspecialchars`.
+`npm install htmlspecialchars` and
+```javascript
+var htmlspecialchars = require('htmlspecialchars');
+console.log(htmlspecialchars("</script>'foo!"));
+```
 
 ### for Browsers
 
-`bower install htmlspecialchars` and load `index.js` in your html:
+If you want to use the latest version simply, specify gh-pages URL directly in your script tag:
+
+```html
+<script src="//teppeis.github.io/htmlspecialchars/index.js"></script>
+<script>
+console.log(htmlspecialchars("</script>'foo!"));
+</script>
+```
+
+or `bower install htmlspecialchars` and specify the local `index.js`:
 
 ```html
 <script src="path/to/bower_components/htmlspecialchars/index.js"></script>
 ```
 
-or load with [RequireJS](http://requirejs.org/).
+or load it with [RequireJS](http://requirejs.org/).
 
 ## License
 
