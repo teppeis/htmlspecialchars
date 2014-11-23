@@ -1,16 +1,17 @@
-'use strict';
-
 (function(global, factory) {
     if (typeof define === 'function' && define.amd) {
-        // RequireJS
+        // AMD
         define(['../index', 'power-assert'], factory);
     } else if (typeof exports === 'object') {
-        // Node.js or Browserify
+        // CommonJS
         factory(require('../'), require('power-assert'));
     } else {
+        // Global
         factory(htmlspecialchars, assert);
     }
 })(this, function (htmlspecialchars, assert) {
+    'use strict';
+
     describe('htmlspecialchars', function() {
         it('escapes "&" to "&amp;"', function() {
             assert(htmlspecialchars('&') === '&amp;');
