@@ -4,7 +4,10 @@
   "description": "Escape special characters to HTML entities in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require intelli-espower-loader test/*.js"
+  },
+  "directories": {
+    "test": "test/"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/teppeis/htmlspecialchars/issues"
   },
-  "homepage": "https://github.com/teppeis/htmlspecialchars"
+  "homepage": "https://github.com/teppeis/htmlspecialchars",
+  "devDependencies": {
+    "espower-loader": "^0.10.0",
+    "intelli-espower-loader": "^0.5.0",
+    "mocha": "^2.0.1",
+    "power-assert": "^0.10.0"
+  }
 }
