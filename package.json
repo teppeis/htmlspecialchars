@@ -4,7 +4,7 @@
   "description": "Escape special characters to HTML entities in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require intelli-espower-loader test/*.js"
+    "test": "mocha --require intelli-espower-loader --require './test/node-adaptor' test/test.js"
   },
   "directories": {
     "test": "test/"
