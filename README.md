@@ -33,7 +33,7 @@ If you want to use the latest version simply, specify gh-pages URL directly in y
 ```html
 <script src="//teppeis.github.io/htmlspecialchars/index.js"></script>
 <script>
-console.log(htmlspecialchars("</script>'foo!"));
+console.log(htmlspecialchars("<\/script>'foo!"));
 </script>
 ```
 
