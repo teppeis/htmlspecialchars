@@ -10,6 +10,8 @@
         global.htmlspecialchars = factory();
     }
 })(this, function() {
+    'use strict';
+
     return function(str) {
         if (str == null) return '';
 
