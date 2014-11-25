@@ -26,6 +26,7 @@
     "package.json"
   ],
   "devDependencies": {
-    "power-assert": "~0.10.0"
+    "power-assert": "~0.10.0",
+    "node-assert": "f25d9b80eac2cde3080613f4ef18a0a507dd4882"
   }
 }
