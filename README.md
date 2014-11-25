@@ -45,6 +45,10 @@ or `bower install htmlspecialchars` and specify the local `index.js`:
 
 or load it with [RequireJS](http://requirejs.org/).
 
+## Testing
+
+This project is tested with [BrowserStack](http://www.browserstack.com/) Open Source Free license. Thakns!
+
 ## License
 
 MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
