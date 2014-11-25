@@ -18,6 +18,8 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+      'test/**/*.powered.js',
+      'test/require-main.js'
     ],
 
     // preprocess matching files before serving them to the browser
@@ -45,9 +47,7 @@ module.exports = function(config) {
 
     browserStack: {
       project: 'htmlspecialchars',
-      name: 'karma.browserstack.conf.js',
-      username: process.env.BROWSERSTACK_USERNAME,
-      accessKey: process.env.BROWSERSTACK_ACCESSKEY
+      name: 'karma.browserstack.conf.js'
     },
 
     // define browsers

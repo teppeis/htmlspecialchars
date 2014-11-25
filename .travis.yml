@@ -1,7 +1,11 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 before_script:
-  - npm install -g bower
-  - bower install
+- npm install -g bower
+- bower install
 sudo: false
+env:
+  global:
+  - secure: ezgJN3/HRPLyauxzeDxdpCiNQz+MIsE2SV0OAzg2jzIuk97IrCyTz64eMgim8NhH76CvL09XxDNapN5NSbyriFLblcWDf6OEN5u2mUBEhJwnmZelY9MBS9kcTvaLpGAhNMvLKLTGWGONqc7q28RnWGorQqD2zn8IEc1kZjQbrzE=
+  - secure: BWlLFN8W44xIY2F7OXOqCQs1CwRHlrq55+J0wxKSkyDvFxrPf7BoD4nIGSdqvAh5hoteA3WioWgr9JMKEfeu7faFOseiKZEKKUPEU535dPj8Tj+p/7JGcxITxFpxB8EHeVHJ2cWCPmpbwGMwmyICAxacc1auUtMccaNe6MF3Gok=
