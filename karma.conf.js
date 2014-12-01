@@ -1,28 +1,77 @@
 // Karma configuration
 module.exports = function(config) {
     var customLaunchers = {
-        sl_chrome: {
+        sl_ie8: {
             base: 'SauceLabs',
-            browserName: 'chrome',
+            browserName: 'internet explorer',
             platform: 'Windows 7',
-            version: '35'
+            version: '8'
         },
-        sl_firefox: {
+        sl_ie9: {
             base: 'SauceLabs',
-            browserName: 'firefox',
-            version: '30'
+            browserName: 'internet explorer',
+            platform: 'Windows 7',
+            version: '9'
         },
-        sl_ios_safari: {
+        sl_ie10: {
             base: 'SauceLabs',
-            browserName: 'iphone',
-            platform: 'OS X 10.9',
-            version: '7.1'
+            browserName: 'internet explorer',
+            platform: 'Windows 8',
+            version: '10'
         },
-        sl_ie_11: {
+        sl_ie11: {
             base: 'SauceLabs',
             browserName: 'internet explorer',
             platform: 'Windows 8.1',
             version: '11'
+        },
+        sl_chrome: {
+            base: 'SauceLabs',
+            browserName: 'chrome',
+            platform: 'Windows 8.1',
+            version: '39'
+        },
+        sl_firefox: {
+            base: 'SauceLabs',
+            browserName: 'firefox',
+            platform: 'Windows 8.1',
+            version: ''
+        },
+        sl_mac_safari8: {
+            base: 'SauceLabs',
+            browserName: 'safari',
+            version: '8'
+        },
+        sl_mac_safari7: {
+            base: 'SauceLabs',
+            browserName: 'safari',
+            version: '7'
+        },
+        sl_ios_safari81: {
+            base: 'SauceLabs',
+            browserName: 'iphone',
+            version: '8.1'
+        },
+        sl_ios_safari80: {
+            base: 'SauceLabs',
+            browserName: 'iphone',
+            version: '8.0'
+        },
+        sl_ios_safari71: {
+            base: 'SauceLabs',
+            browserName: 'iphone',
+            version: '7.1'
+        },
+        sl_ios_safari70: {
+            base: 'SauceLabs',
+            browserName: 'iphone',
+            version: '7.0'
+        },
+        sl_android44: {
+            base: 'SauceLabs',
+            browserName: 'android',
+            version: '4.4',
+            deviceName: 'Samsung Galaxy S4 Emulator'
         }
     };
 
@@ -37,13 +86,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'bower_components/power-assert/build/power-assert.js',
+      'bower_components/node-assert/assert.js',
       'index.js',
-      'test/**/*.powered.js'
+      'test/test.js'
     ],
 
     // list of files to exclude
     exclude: [
+      'test/**/*.powered.js',
       'test/require-main.js'
     ],
 
@@ -75,6 +125,10 @@ module.exports = function(config) {
     },
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
+
+    // Timeout for capturing a browser (in ms).
+    // Default: 60000
+    captureTimeout: 5 * 60 * 1000,
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
