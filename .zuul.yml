@@ -1,0 +1,24 @@
+ui: mocha-bdd
+builder: ./bundle
+scripts:
+- bower_components/node-assert/assert.js
+- index.js
+browsers:
+  - name: ie
+    version: 11..latest
+    platform: Windows 2012 R2
+  - name: ie
+    version: 8..10
+    platform: Windows 2008
+  - name: chrome
+    version: latest
+    platform: Windows 2012 R2
+  - name: firefox
+    version: latest
+    platform: Windows 2012 R2
+  - name: safari
+    version: 7..latest
+  - name: iphone
+    version: ['7.0', latest]
+  - name: android
+    version: ['4.0', latest]

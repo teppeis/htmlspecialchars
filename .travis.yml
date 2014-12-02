@@ -2,8 +2,10 @@ language: node_js
 node_js:
 - '0.10'
 before_script:
-- npm install -g bower
+- npm install -g bower zuul
 - bower install
+script:
+- zuul -- test/test.js
 sudo: false
 env:
   global:
