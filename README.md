@@ -47,7 +47,12 @@ or load it with [RequireJS](http://requirejs.org/).
 
 ## Testing
 
-This project is tested with [BrowserStack](http://www.browserstack.com/) Open Source Free license. Thanks!
+This library is tested with [BrowserStack](http://www.browserstack.com/) Open Source Free license. Thanks!
+
+* IE8, IE11
+* Chrome
+* Firefox
+* Safari7, Safari8
 
 ## License
 
