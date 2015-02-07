@@ -137,13 +137,13 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
       'bs_ie11_win81',
-      'bs_ie10_win8',
-      'bs_ie9_win7',
+      // 'bs_ie10_win8',
+      // 'bs_ie9_win7',
       'bs_ie8_win7',
       'bs_chrome_win81',
       'bs_firefox_win81',
       'bs_safari8_mac_yosemite',
-      'bs_safari7_mac_mavericks',
+      // 'bs_safari7_mac_mavericks',
       'bs_iphone5s',
       // 'bs_android5',
       'bs_android44',
