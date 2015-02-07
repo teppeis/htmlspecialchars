@@ -1,8 +1,11 @@
 {
   "name": "htmlspecialchars",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Escape special characters to HTML entities in JavaScript",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "npm run mocha && npm run espower && npm run karma:requirejs && npm run karma:browserstack",
     "mocha": "mocha --require intelli-espower-loader test/test.js",
