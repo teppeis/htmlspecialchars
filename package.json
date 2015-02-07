@@ -11,9 +11,6 @@
     "karma:browserstack": "./node_modules/karma/bin/karma start karma.browserstack.conf.js --single-run",
     "espower": "espower test/test.js > test/test.powered.js"
   },
-  "directories": {
-    "test": "test/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/teppeis/htmlspecialchars"
