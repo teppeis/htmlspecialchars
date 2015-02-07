@@ -19,7 +19,7 @@
     "html",
     "escape"
   ],
-  "author": "teppeis@gmail.com",
+  "author": "Teppei Sato <teppeis@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/teppeis/htmlspecialchars/issues"
