@@ -83,14 +83,14 @@ module.exports = function(config) {
       bs_chrome_win81: {
         base: 'BrowserStack',
         browser: 'chrome',
-        browser_version: '38',
+        browser_version: '40',
         os: 'Windows',
         os_version: '8.1'
       },
       bs_firefox_win81: {
         base: 'BrowserStack',
         browser: 'firefox',
-        browser_version: '33',
+        browser_version: '35',
         os: 'Windows',
         os_version: '8.1'
       },
@@ -115,9 +115,17 @@ module.exports = function(config) {
         os: 'ios',
         os_version: '7.0'
       },
+      bs_android44: {
+        base: 'BrowserStack',
+        device: 'Samsung Galaxy S5',
+        browser: 'Android Browser',
+        browser_version: null,
+        os: 'android',
+        os_version: '4.4'
+      },
       bs_android5: {
         base: 'BrowserStack',
-        device: 'Google Nexus 5',
+        device: 'Google Nexus 6',
         browser: 'Android Browser',
         browser_version: null,
         os: 'android',
@@ -129,13 +137,16 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
       'bs_ie11_win81',
+      'bs_ie10_win8',
+      'bs_ie9_win7',
       'bs_ie8_win7',
       'bs_chrome_win81',
       'bs_firefox_win81',
       'bs_safari8_mac_yosemite',
       'bs_safari7_mac_mavericks',
-      // 'bs_iphone5s',
+      'bs_iphone5s',
       // 'bs_android5',
+      'bs_android44',
       'PhantomJS'
     ],
 
