@@ -49,10 +49,12 @@ or load it with [RequireJS](http://requirejs.org/).
 
 This library is tested with [BrowserStack](http://www.browserstack.com/) Open Source Free license. Thanks!
 
-* IE8, IE11
+* IE 8, IE 11
 * Chrome
 * Firefox
-* Safari7, Safari8
+* Safari 8
+* iOS 7 Safari
+* Android 4.4 Browser
 
 ## License
 
