@@ -1,6 +1,8 @@
 htmlspecialchars [![NPM version][npm-image]][npm-url] [![bower version][bower-image]][bower-url] [![build status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url]
 ====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/htmlspecialchars.svg)](https://greenkeeper.io/)
+
 > Escape special characters to HTML entities in JavaScript
 
 * Simple
